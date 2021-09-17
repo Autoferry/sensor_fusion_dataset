@@ -1,5 +1,6 @@
 # Maritime Sensor Fusion Dataset
-This repo contains the sensor fusion dataset from the paper xxxx \\
+This repo contains the sensor fusion dataset from the paper xxxx 
+
 Detections from radar, lidar, EO and IR cameras are provided in an ownship-fixed NED frame as both json and mat files. Target ground truths are also included.
 
 ## Scenarios

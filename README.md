@@ -14,7 +14,7 @@ Each detection has the following structure
             -390.34757580136119
         ],
         "time": 1.6201148916230948E+9, // Time-stamp of measurements
-        "measurement": [ // Measurements given in vessel fixed NED. Has dimensions 1xm for EO/IR (bearings) and 2xm for Lidar/Radar (north, east)
+        "measurement": [ // Measurements given in vessel fixed NED. Has dimensions 1xM for EO/IR (bearings) and 2xM for Lidar/Radar (north, east)
             1.0615958558089145,
             1.2464051632248236,
             0.40396339293077094
@@ -24,7 +24,7 @@ Each detection has the following structure
  Ground truth uses a similar structure with positions and velocities reported in the ownship fixed NED frame. 
  ```javascript
 [        {
-            "targetID": 1, 
+            "targetID": 1, // Havfruen
             "position": [
                 101.57502148953375,
                 36.200472225608678,
@@ -38,7 +38,7 @@ Each detection has the following structure
             "time": 1.62011489164E+9
         },
         {
-            "targetID": 2,
+            "targetID": 2, // Gunnerus/Jet boat (environment 1/2)
             "position": [
                 -137.63073752771453,
                 -193.54472437864416,

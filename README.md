@@ -44,7 +44,7 @@ Each detection has the following structure
         }    ], 
 ```
 Measurements can be converted to the Piren NED frame by adding the ownship position to each individual measurement for the radar/lidar. Similarly ground truth can be converted to the ownship NED frame by subtracting the ownship translation of the corresponding detection. 
-The Piren LLA frame has origin in the LLA coordinates
+The Piren NED frame has origin in the LLA coordinates
  ```javascript
 PirenLLA = [63.4389029083, 10.39908278, 39.923]
 ```

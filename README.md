@@ -31,11 +31,6 @@ Each detection has the following structure
                 36.200472225608678,
                 0
             ],
-            "velocity": [
-                0.0002763919016669642,
-                -2.495464414766166,
-                0
-            ],
             "time": 1.62011489164E+9
         },
         {
@@ -45,15 +40,10 @@ Each detection has the following structure
                 -193.54472437864416,
                 0
             ],
-            "velocity": [
-                -2.7864588537541586,
-                -2.4957877293854738,
-                0
-            ],
             "time": 1.6201148916E+9
         }    ], 
 ```
-Measurements can be converted to the Piren NED frame by adding the ownship position to each individual measurement for the radar/lidar. Similarly ground truth can be converted to the ownship NED frame by subtracting the ownship translation of the corresponding detection. Ownship velocity must also be compensated for.
+Measurements can be converted to the Piren NED frame by adding the ownship position to each individual measurement for the radar/lidar. Similarly ground truth can be converted to the ownship NED frame by subtracting the ownship translation of the corresponding detection. 
 ## Scenarios
 Multiple scenarios are available, each designed to challenge SITAW in certain ways.
 ### Environment 1

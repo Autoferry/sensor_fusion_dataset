@@ -3,7 +3,8 @@ This repo contains the sensor fusion dataset from the paper xxxx
 
 Detections from radar, lidar, EO and IR cameras are provided in an ownship-fixed NED frame as both json and mat files. Target ground truths are also included. We also aim to publish raw sensor/navigation data used to generate these files if and when any potential privacy concerns have been adressed. 
 ## Data structure
-Each scenario folder contains three files, two json files with detections and ground truth and a single MATLAB file containing both. 
+Each scenario folder contains three files, two json files with detections and ground truth and a single MATLAB file containing both. Each file will contain a series of detections or measurements where a detections index in the detection list will have a corresponding ground truth index in the ground truth list, e.g. the fifth detection object will correspond to the fifth ground truth object.
+
 Each detection has the following structure
 ```javascript
     {
@@ -21,7 +22,7 @@ Each detection has the following structure
         ],  
     }
  ```
- Ground truth uses a similar structure with positions and velocities reported in the ownship fixed NED frame. 
+ Ground truth uses a similar structure with positions and velocities reported in the Piren NED frame. 
  ```javascript
 [        {
             "targetID": 1, // Havfruen
@@ -52,6 +53,7 @@ Each detection has the following structure
             "time": 1.6201148916E+9
         }    ], 
 ```
+Measurements can be converted to the Piren NED frame by adding the ownship position to each individual measurement for the radar/lidar. Similarly ground truth can be converted to the ownship NED frame by subtracting the ownship translation of the corresponding detection. Ownship velocity must also be compensated for.
 ## Scenarios
 Multiple scenarios are available, each designed to challenge SITAW in certain ways.
 ### Environment 1

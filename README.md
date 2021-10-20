@@ -1,4 +1,4 @@
-# Maritime Sensor Fusion Dataset
+# Maritime Sensor Fusion Benchmark Dataset
 This page contains the Autoferry sensor fusion benchmark dataset for multi-target tracking. Get the datasets [here](https://github.com/Autoferry/sensor_fusion_dataset) or by following the *View on GitHub* link above.
 
 Detections from radar, lidar, EO and IR cameras are provided in an ownship-fixed NED frame as both json and mat files. Target ground truths are also included. We also aim to publish raw sensor/navigation data used to generate these files if and when any potential privacy concerns have been adressed. 

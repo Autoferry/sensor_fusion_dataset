@@ -1,4 +1,4 @@
-# Maritime Sensor Fusion Dataset
+# Maritime Sensor Fusion Benchmark Dataset
 This github repo contains the Autoferry sensor fusion benchmark dataset for multi-target tracking. Detections from radar, lidar, EO and IR cameras are provided in an ownship-fixed NED frame as both json and mat files. Target ground truths are also included. We also aim to publish raw sensor/navigation data used to generate these files if and when any potential privacy concerns have been adressed. 
 ## Data structure
 Each scenario folder contains three files, two json files with detections and ground truth and a single MATLAB file containing both. Each file will contain a series of detections or measurements where a detections index in the detection list will have a corresponding ground truth index in the ground truth list, e.g. the fifth detection object will correspond to the fifth ground truth object.

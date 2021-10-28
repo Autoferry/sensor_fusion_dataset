@@ -6,7 +6,7 @@ Each scenario folder contains three files, two json files with detections and gr
 Each detection has the following structure
 ```javascript
     {
-        "sensorID": 3, // Lidar:1, Radar:2, EO:3, IR:4
+        "sensorID": 3, // Lidar:1, Radar:2, IR:3, EO:4
         
         "ownshipPosition": [ // North-east position of ownship relative to Piren NED frame.
             -16.605584546937536,
